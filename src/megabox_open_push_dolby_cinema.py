@@ -18,6 +18,8 @@ def dolby_cinema_main(url, cookies, headers, json_data, target_name, message_que
             # 날짜 추출
             set1 = {item['playDe'] for item in response1}
             set2 = {item['playDe'] for item in response2}
+            print("set1", set1)
+            print("set2", set2)
             # 새 응답과 저장된 이전 응답이 다르다면
             if set1 != set2:
                 diff = set2 - set1

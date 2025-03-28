@@ -3,7 +3,7 @@ import os
 ##################################################
 # ENV
 # discord_bot_token = os.environ["DISCORD_BOT_TOKEN"]
-discord_bot_token = ""
+discord_bot_token = os.environ["DISCORD_BOT_TOKEN"]
 
 
 

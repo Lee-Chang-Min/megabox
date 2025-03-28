@@ -33,7 +33,7 @@ async def send_message():
 
     if not message_queue.empty():
         message = message_queue.get(0)
-        channel_id = discord_channel_id_dictionary.get(message[0])
+        channel_id = discord_channel_id_dictionary["LOG"]
         print(f"send_message to {message[0]} : {message[1]}, channel_id : {channel_id}")
         
         if channel_id:
